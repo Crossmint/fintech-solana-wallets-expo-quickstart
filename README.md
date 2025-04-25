@@ -10,7 +10,7 @@
 
 <br>
 <br>
-<img src="[https://github.com/user-attachments/assets/76a983ab-499e-4d12-af7a-0ae17cb0b6cd](https://github.com/user-attachments/assets/80eda581-6a21-46d4-88de-04dacb8eb39b)" alt="Image" width="full">
+<img src="https://github.com/user-attachments/assets/80eda581-6a21-46d4-88de-04dacb8eb39b" alt="Image" width="full">
 </div>
 
 ## Introduction
