@@ -55,6 +55,8 @@ cp .env.template .env
    
    b. To authenticate requests from your app, whitelist the app domain by selecting "Mobile" under "App type" and entering your iOS bundle ID and Android package name from `app.json` (by default this quickstart uses "com.crossmint.fintech.solana.wallets").
 
+   c. Select all the scopes for wallets and users.
+
 5. Add the API key to the `.env` file.
 
 ```bash
