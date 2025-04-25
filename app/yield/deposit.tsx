@@ -52,7 +52,7 @@ export default function YieldDeposit() {
         },
         body: JSON.stringify({
           owner: wallet.address,
-          mintAddress: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v", // USDC mint address
+          mintAddress: process.env.EXPO_PUBLIC_USDC_TOKEN_MINT || "", // USDC mint address
           protectedAmount: Number(amount),
         }),
       };

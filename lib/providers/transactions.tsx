@@ -60,7 +60,7 @@ export function TransactionsProvider({
       try {
         const address = wallet.address;
         const response = await fetch(
-          `https://api.helius.xyz/v0/addresses/${address}/transactions?api-key=${process.env.EXPO_PUBLIC_HELIUS_API_KEY}&limit=10`
+          `https://api.helius.xyz/v0/addresses/${address}/transactions?api-key=${process.env.EXPO_PUBLIC_HELIUS_API_KEY}&limit=5`
         );
         const data = await response.json();
 
@@ -70,6 +70,8 @@ export function TransactionsProvider({
         if (Array.isArray(data)) {
           for (const tx of data) {
             // Check if tokenTransfers exists and is an array
+            console.log("tx", tx.descriptionText);
+            console.log("tx", tx.tokenTransfers);
             if (
               tx.tokenTransfers &&
               Array.isArray(tx.tokenTransfers) &&
@@ -93,8 +95,8 @@ export function TransactionsProvider({
             }
           }
         } else {
-          console.error("Unexpected API response format:", data);
-          Alert.alert("Error", "Unexpected response format from API");
+          //console.error("Unexpected API response format:", data);
+          //Alert.alert("Error", "Unexpected response format from API");
         }
 
         setTransactions(usdcTransfers);

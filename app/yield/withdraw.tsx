@@ -47,7 +47,7 @@ export default function YieldWithdraw() {
         },
         body: JSON.stringify({
           owner: wallet.address,
-          mintAddress: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          mintAddress: process.env.EXPO_PUBLIC_USDC_TOKEN_MINT || "",
           amount: Number(amount),
         }),
       };

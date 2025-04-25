@@ -15,14 +15,14 @@
 
 ## Introduction
 
-Create and interact with Crossmint wallets in Solana using Crossmint Auth to handle user authentication.
+Create your own remittance app with Crossmint Wallets.
 
 **Learn how to:**
 
 - Create a wallet
-- View its balance for SOL and SPL tokens
-- Send a transaction
-- Add delegated signers to allow third parties to sign transactions on behalf of your wallet
+- Hold and send USDC
+- Earn yield on your USDC with [Lulo](https://lulo.fi/)
+- See your transaction history with [Helius](https://helius.dev/)
 
 ## Setup
 
@@ -49,11 +49,11 @@ bun install
 ```bash
 cp .env.template .env
 ```
-4. Set up your Crossmint API key:
+4. Set up your Crossmint API key. This quickstart needs to use a production API key:
    
    a. Generate a Crossmint API key from [here](https://docs.crossmint.com/introduction/platform/api-keys/client-side).
    
-   b. To authenticate requests from your app, whitelist the app domain by selecting "Mobile" under "App type" and entering your iOS bundle ID and Android package name from `app.json` (by default this quickstart uses "com.crossmint.solana.wallets").
+   b. To authenticate requests from your app, whitelist the app domain by selecting "Mobile" under "App type" and entering your iOS bundle ID and Android package name from `app.json` (by default this quickstart uses "com.crossmint.fintech.solana.wallets").
 
 5. Add the API key to the `.env` file.
 
@@ -61,7 +61,23 @@ cp .env.template .env
 EXPO_PUBLIC_CLIENT_CROSSMINT_API_KEY=your_api_key
 ```
 
-6. Run the development server:
+6. Sign up for a [Helius](https://helius.dev/) account and get an API key.
+
+7. Add the API key to the `.env` file.
+
+```bash
+EXPO_PUBLIC_HELIUS_API_KEY="000000000-0000-0000-0000-000000000000"
+```
+
+8. Sign up for a [Lulo](https://dev.lulo.fi/) account, create a project and get an API key.
+
+9. Add the API key to the `.env` file.
+
+```bash
+EXPO_PUBLIC_LULO_API_KEY="000000000-0000-0000-0000-000000000000"
+```
+
+10. Run the app locally:
 
 ```bash
 npm run start
@@ -78,12 +94,6 @@ Note: When running an iOS development build, make sure you're running the latest
 ## Necessary polyfills
 
 Check out [polyfills.ts](lib/polyfills.ts) and [metro.config.js](metro.config.js) for the necessary polyfills to send Solana transactions. Make sure to keep these in your Expo app.
-
-## Using in production
-
-1. Create a [production API key](https://docs.crossmint.com/introduction/platform/api-keys/client-side).
-2. Update the `NEXT_PUBLIC_RPC_URL` to a mainnet RPC URL, you can use the public RPC URL `https://api.mainnet-beta.solana.com`.
-3. Update the `NEXT_PUBLIC_USDC_TOKEN_MINT` to the mainnet USDC token mint address `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`.
 
 ## Errors when running in iOS simulator
 
