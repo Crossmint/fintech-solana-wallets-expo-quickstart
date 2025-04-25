@@ -2,15 +2,15 @@
 <img width="200" alt="Image" src="https://github.com/user-attachments/assets/8b617791-cd37-4a5a-8695-a7c9018b7c70" />
 <br>
 <br>
-<h1>Fintech Solana Wallets Expo Quickstart</h1>
+<h1>Fintech Quickstart</h1>
 
 <div align="center">
-<a href="https://solana-wallets.demos-crossmint.com/">Live Demo</a> | <a href="https://docs.crossmint.com/introduction/platform/wallets">Docs</a> | <a href="https://github.com/crossmint">See all quickstarts</a>
+<a href="https://docs.crossmint.com/introduction/platform/wallets">Docs</a> | <a href="https://github.com/crossmint">See all quickstarts</a>
 </div>
 
 <br>
 <br>
-<img src="https://github.com/user-attachments/assets/76a983ab-499e-4d12-af7a-0ae17cb0b6cd" alt="Image" width="full">
+<img src="[https://github.com/user-attachments/assets/76a983ab-499e-4d12-af7a-0ae17cb0b6cd](https://github.com/user-attachments/assets/80eda581-6a21-46d4-88de-04dacb8eb39b)" alt="Image" width="full">
 </div>
 
 ## Introduction
